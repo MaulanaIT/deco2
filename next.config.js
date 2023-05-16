@@ -16,6 +16,7 @@ module.exports = {
     // basePath: '/deco2',
     basePath: '',
     images: {
+        unoptimized: true,
         domains: [
             'betapdd.deco2.green',
             'betapddadm.deco2.green',
