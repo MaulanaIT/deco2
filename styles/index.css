@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #003300;
+    --secondary-color: #127212;
+    --url-background-services: url('https://carbonoffset.asia/wp-content/uploads/2021/06/Rectangle-39-1.png');
+}
+
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+ol {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    margin: 0;
+    padding-left: 48px;
+}
+
+ol>li {
+    line-height: 24px;
+}
+
+p {
+    margin: 0;
+}
+
+.react-tel-input .form-control {
+    padding-left: 48px !important;
+}
+
+section {
+    padding-bottom: 96px;
+    padding-top: 96px;
+    position: relative;
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+::-webkit-scrollbar {
+    background-color: transparent;
+    height: 6px;
+    width: 8px;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {
+    display: none;
+}

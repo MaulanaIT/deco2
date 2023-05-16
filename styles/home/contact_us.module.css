@@ -1,0 +1,44 @@
+.contact_us {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    min-height: 680px;
+}
+
+.contact_us>.content {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.contact_us>.content>.description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.contact_us>.content>.photo>span>img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.contact_us>.content>.description>.article {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .contact_us>.content {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        text-align: center;
+    }
+}

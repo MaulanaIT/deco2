@@ -1,0 +1,144 @@
+.container {
+    min-height: 680px;
+}
+
+.container>.first_section {
+    background: url('../public/assets/bg-about-us-1.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 96px !important;
+    position: relative;
+}
+
+.container>.first_section::before {
+    align-items: center;
+    background-color: white;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.container>.first_section .title {
+    padding-top: 96px;
+}
+
+.container>.second_section .title,
+.container>.third_section .title {
+    padding-top: 0px;
+}
+
+.container>.first_section .title,
+.container>.third_section .title {
+    color: var(--primary-color);
+}
+
+.container>.second_section .title {
+    color: white;
+}
+
+.container>.fourth_section .title {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: normal;
+    padding-bottom: 48px;
+}
+
+.container>.first_section .title,
+.container>.second_section .title,
+.container>.third_section .title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.container>.first_section,
+.container>.second_section,
+.container>.third_section,
+.container>.fourth_section {
+    display: flex;
+    min-height: 800px;
+    padding-bottom: 48px;
+    padding-top: 170px;
+    position: sticky;
+    scroll-snap-align: start;
+    top: 0;
+}
+
+.container>.first_section *,
+.container>.second_section *,
+.container>.third_section *,
+.container>.fourth_section * {
+    text-align: center;
+    z-index: 1;
+}
+
+.container>.first_section p,
+.container>.second_section p,
+.container>.third_section p,
+.container>.fourth_section p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.container>.second_section p {
+    color: white;
+    text-align: center;
+}
+
+.container>.fourth_section p {
+    color: var(--primary-color);
+}
+
+.container>.second_section {
+    background-color: var(--primary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container>.third_section {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.container>.fourth_section {
+    background-color: white;
+    min-height: 680px;
+}
+
+.container>.fourth_section .video {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+}
+
+.container>.fourth_section .video>iframe {
+    min-height: 240px;
+    width: 100%;
+}
+
+.container>.third_section .sub_title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 48px;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .container>.first_section,
+    .container>.second_section,
+    .container>.third_section,
+    .container>.fourth_section {
+        position: relative;
+        top: unset;
+    }
+}

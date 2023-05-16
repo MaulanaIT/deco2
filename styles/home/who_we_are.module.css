@@ -1,0 +1,99 @@
+.who_we_are {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
+
+.who_we_are>.content {
+    align-items: stretch;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.who_we_are>.content:not(:last-child) {
+    border-bottom: 1px solid #7e7e7e29;
+}
+
+.who_we_are>.section {
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.who_we_are>.content>.description {
+    display: block;
+}
+
+.who_we_are>.content>.description>ol>li {
+    color: #7e7e7e;
+    font-size: 16px;
+}
+
+.who_we_are>.content>.description>.title {
+    color: #3d3d3d;
+    font-family: 'Rufina', Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-family: 500;
+    padding-bottom: 12px;
+    padding-top: 24px;
+}
+
+.who_we_are>.content>.photo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    width: 100%;
+}
+
+.who_we_are>.content>.photo>.job {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.who_we_are>.content>.photo>.name {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.who_we_are>.content>.photo>.phone {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.who_we_are>.content>.photo>span>img {
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 991px) {
+    .who_we_are {
+        grid-template-columns: 1fr;
+    }
+
+    .who_we_are>.section {
+        margin-bottom: 24px;
+    }
+
+    .who_we_are>.content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .who_we_are>.content.reverse {
+        flex-direction: column-reverse;
+    }
+}

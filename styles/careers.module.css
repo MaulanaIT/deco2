@@ -1,0 +1,49 @@
+.container {
+    background: url('../public/assets/bg-careers.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 100vh;
+    padding-bottom: 160px;
+    padding-top: 160px;
+    position: relative;
+}
+
+.container::before {
+    align-items: center;
+    background-color: white;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.container * {
+    z-index: 1;
+}
+
+.container .description {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.container .description>p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.container .title {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    text-align: center;
+}

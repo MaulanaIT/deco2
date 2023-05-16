@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    min-height: 100vh;
+    padding-bottom: 160px;
+    padding-top: 160px;
+    position: relative;
+}
+
+.container>.content {
+    position: relative;
+    z-index: 1;
+}
+
+.container>.content>.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.container>.content>.description>.form {
+    background-color: white;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 48px;
+}
+
+.container>.content>.description>.form .button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 6px 48px;
+    transition: .4s ease-in-out;
+}
+
+.container>.content>.description>.form .button:hover {
+    background-color: black;
+}
+
+.container>.content>.description>p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.container>.content>.title {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.marker {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    left: 100%;
+    padding: 8px 16px;
+    position: relative;
+    top: 100%;
+    transform: translate(-75%, -75%);
+}
+
+.marker>span {
+    height: 28px !important;
+    max-width: unset !important;
+    width: 24px !important;
+}
+
+.marker>.coordinate {
+    left: 42px;
+    position: absolute;
+    top: 12px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+    .container>.content>.description>.form {
+        margin-left: unset;
+        margin-right: unset;
+    }
+}

@@ -1,0 +1,12 @@
+.container {
+    min-height: 100vh;
+    padding-bottom: 96px;
+    padding-top: 96px;
+}
+
+.container>.title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}

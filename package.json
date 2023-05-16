@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@loadable/component": "^5.15.2",
+    "@reduxjs/toolkit": "^1.8.3",
+    "axios": "^0.27.2",
+    "framer-motion": "^6.5.1",
+    "google-map-react": "^2.2.0",
+    "html2canvas": "^1.4.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "next": "^12.2.2",
+    "next-redux-wrapper": "^7.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.2.7",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "use-react-screenshot": "^3.0.0"
+  },
+  "name": "deco2-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "export": "next build && next export",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2"
+  }
+}

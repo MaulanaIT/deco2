@@ -1,0 +1,85 @@
+.container {
+    background: url('../public/assets/bg-contact-us.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    min-height: 100vh;
+    padding-bottom: 160px;
+    padding-top: 160px;
+    position: relative;
+}
+
+.container::before {
+    align-items: center;
+    background-color: white;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.container>.content {
+    position: relative;
+    z-index: 1;
+}
+
+.container>.content>.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.container>.content>.description>.form {
+    background-color: white;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 48px;
+}
+
+.container>.content>.description>.form .button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 6px 48px;
+    transition: .4s ease-in-out;
+}
+
+.container>.content>.description>.form .button:hover {
+    background-color: black;
+}
+
+.container>.content>.description>p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.container>.content>.title {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .container>.content>.description>.form {
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
